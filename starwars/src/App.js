@@ -17,8 +17,8 @@ const CharacterContainer = styled.div`
     display: none;
   }
   margin-top: 3%;
-  background: #C1C1C1;
-  opacity: 90%;
+  background: rgb(193, 193, 193, .9);
+  
   border-radius: 20px;
   box-shadow: 0 0 5px black;
 `

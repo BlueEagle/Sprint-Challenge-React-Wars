@@ -32,7 +32,7 @@ const Character = (props) => {
         <CharacterText>Name: {props.character.name}</CharacterText>
         <CharacterText>Status: {props.character.status}</CharacterText>
       </PrimaryCharacterDisplay>
-      {displayDetails && <CharacterDetails image={props.character.image} species={props.character.species} type={props.character.type} origin={props.character.origin.name} location={props.character.location.name} />}
+      {displayDetails && <CharacterDetails image={props.character.image} species={props.character.species} origin={props.character.origin.name} location={props.character.location.name} />}
     </CharacterDisplayBox>
   )
 }

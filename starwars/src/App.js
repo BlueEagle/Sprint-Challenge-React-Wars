@@ -45,30 +45,16 @@ const App = () => {
   }, [])
 
 
-  function understandingEye() {
-    // console.log('Results',characterList)
-    // characterList.forEach(character => {
-    //   console.log(character)
-    // })
-    // characterList.map(character => {
-    //   <Character character={character} />
-    // })
-    // return(<Character character={characterList[0]} />)
-    console.log(characterList)
+  function listCharacters() {
+    return characterList.map(char => {
+      return (<Character character={char} />)
+    })
   }
 
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      {understandingEye()}
-      {
-        // characterList
-        // characterList.map(character => {
-        //   // console.log(character)
-        //   <Character character={character} />
-        // })
-      }
-      {/* <Character /> */}
+      {listCharacters()}
     </div>
   );
 }

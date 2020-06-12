@@ -39,7 +39,7 @@ const App = () => {
         // console.log(response.data);
         const pages = response.data.info.pages
 
-        for (let page=1; page<=2; page++){
+        for (let page=1; page<=pages; page++){
           Axios.get(`${API_URL}?page=${page}`)
             .then(pageResponse => {
               pageResponse.data.results.forEach(resultItem => {
